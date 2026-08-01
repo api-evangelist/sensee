@@ -1,20 +1,49 @@
 aid: sensee
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sensee.png
 name: Sensee
-description: 'Sensee is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Sensee is a French direct-to-consumer online optician and contact-lens
+  retailer, operating since 2005 and run by licensed opticians. It sells
+  contact lenses, lens-care solutions, eye-health products and eyewear across
+  six European markets (France, Germany, Italy, Spain, Switzerland and Austria)
+  under localized storefronts, and supports third-party insurance payment
+  (tiers payant) via networks such as Kalixia, Santeclair, Almerys and Optilys.
+  Sensee is a subsidiary of Vision Group Holding AG. It was surfaced as a
+  portfolio company of Partech and added to the API Evangelist network for
+  enrichment; the enrichment pass found no public API, SDK or developer
+  program, only a corporate security.txt / responsible-disclosure surface.
 url: https://raw.githubusercontent.com/api-evangelist/sensee/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - partech
+x-parent: Vision Group Holding AG
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Eyewear
+- Contact Lenses
+- Optical
+- E-Commerce
+- Healthcare
+- Retail
+- Europe
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,4 +52,19 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://sensee.com/
+  url: https://sensee.com/
+- type: WellKnown
+  url: well-known/sensee-well-known.yml
+- type: SecurityTxt
+  url: well-known/sensee-security.txt
+- type: DomainSecurity
+  url: security/sensee-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/sensee-vulnerability-disclosure.yml
+- type: Security
+  url: https://visiongroup.io/responsible-disclosure/
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1

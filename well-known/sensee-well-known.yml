@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: searched
+source: live probe of https://sensee.com/.well-known/*
+host: https://sensee.com
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  file: sensee-security.txt
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  Only /.well-known/security.txt returns a genuine RFC 9116 document; all other
+  probed paths return the site's soft-404 HTML shell (the SPA redirect to
+  lentillesmoinscheres.com), not real discovery documents. Sensee publishes no
+  public API, so no OIDC/OAuth/api-catalog surface is expected.

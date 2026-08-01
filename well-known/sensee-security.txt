@@ -1,0 +1,18 @@
+# Security contact information for Vision Group 
+# Conforms to RFC 9116 - https://www.rfc-editor.org/info/rfc9116
+
+# This policy covers all publicly accessible systems, websites,
+# APIs, and applications owned or operated by Vision Group Holding AG and its
+# subsidiaries, regardless of domain or infrastructure.
+
+# Our security address
+Contact: mailto:security@visiongroup.io
+
+# Our security policy
+Policy: https://visiongroup.io/responsible-disclosure/
+
+# Language
+Preferred-Languages: en
+
+# Expiration
+Expires: 2027-12-31T00:00:00.000Z
